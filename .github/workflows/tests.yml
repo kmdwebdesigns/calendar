@@ -20,7 +20,7 @@ jobs:
     name: PHP ${{ matrix.php }} - ${{ matrix.dependency-version }}
     env:
       extensions: mbstring, intl
-      key: ${{ matrix.dependency-version }}-composer-${{ hashFiles('composer.json') }}
+      key: v1
 
     steps:
       - name: Checkout the code
